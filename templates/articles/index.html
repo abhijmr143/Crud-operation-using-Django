@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{data.title}}</title>
+</head>
+    {% for d in data %}
+    <hr>
+        <h2>{{d.title}}</h2>
+        <p>{{d.content|truncatechars:60}}</p>
+        <p>{{d.updated}}</p>
+    <hr/>
+    {% endfor %}
+</body>
+</html>
